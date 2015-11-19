@@ -1,11 +1,11 @@
 jQuery plugin
 -------------
 
-Enable multi check or uncheck checkboxes by pressing shift key.
+Check or uncheck multiple checkbox by pressing shift key.
 
-'''js
+```js
 $('input[type=checkbox]').multicheck();
-'''
+```
 
 * click on checkbox
 
