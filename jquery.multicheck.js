@@ -3,11 +3,14 @@
 	var shift = false;
 	
 	$.fn.multicheck = function() {
-		var items = this;
-		var lastp = -1;
+		var
+			// checkboxes
+			items = this,
+			// position of the last checkbox clicked
+			lastp = -1;
 		
 		// listening click on checkboxes
-		this.on('click', function() {
+		return this.on('click', function() {
 			var
 				// position of this checkbox
 				index = items.index(this),
@@ -21,9 +24,8 @@
 					items.get(i++).checked = state);
 			}
 			
-			// stores this position as last clicked checkbox
+			// updates the last position
 			lastp = index;
-			shift = false;
 		});
 	};
 	
